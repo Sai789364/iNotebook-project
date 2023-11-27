@@ -5,7 +5,7 @@ const Signup = () => {
   const [credentials,setcredentials]=useState({name:"",email:"",password:"",epassword:""})
   const navigate = useNavigate();
 
-  const {name,email,password}=credentials
+  const {name,email,password}=credentials;
 
   const handlechange= async (e)=>{
       e.preventDefault();

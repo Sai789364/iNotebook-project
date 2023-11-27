@@ -5,7 +5,9 @@ var cors = require('cors')
 connectToMongoFunction();
 
 const app = express()
-app.use(cors())
+app.use(cors({
+  origin: "https://i-notebook-project-backend.vercel.app"
+}))
 
 app.use(express.json())
 
